@@ -1,0 +1,17 @@
+#
+#  RUN SPECIFICATION
+#
+
+
+Bundle-Version:				1.0.0.${tstamp}
+Bundle-SymbolicName:		HelloWorld.launch
+JPM-Command:				jpmCommand2
+
+
+-runfw:						org.eclipse.osgi
+
+-runrequires:  \
+	osgi.identity;filter:='(osgi.identity=HelloWorld)'
+
+-runbundles: \
+	${error;Resolve first}
